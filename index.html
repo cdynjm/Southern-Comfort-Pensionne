@@ -53,7 +53,12 @@
         <a href="/" class="d-flex align-items-center me-auto me-xl-0">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img draggable="false" src="assets/img/logo.png" alt=""> -->
-          <img src="assets/img/header.png" height="28px" alt="" draggable="false">
+          <img
+            src="assets/img/header.png"
+            height="28px"
+            alt=""
+            draggable="false"
+          />
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -86,18 +91,53 @@
     </header>
 
     <main class="main">
+
+      <style>
+        .bg-overlay {
+          position: relative;
+          background-image: url("assets/img/storage/sample-1.jpg");
+          background-size: cover;
+          background-position: center;
+          overflow: hidden;
+        }
+
+        .bg-overlay::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(255, 255, 255, 0.85); /* black overlay with 0.5 opacity */
+          z-index: 0;
+        }
+
+        .bg-overlay .container {
+          position: relative;
+          z-index: 2;
+        }
+      </style>
+
       <!-- Hero Section -->
-      <section id="home" class="hero section light-background">
+      <section id="home" class="hero section bg-overlay">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-6" style="margin-top: -40px">
-              <img data-aos="fade-up"
+              <img
+                data-aos="fade-up"
                 draggable="false"
                 src="assets/img/logo-main.png"
                 class="img-fluid mb-4"
                 alt=""
               />
-             <img data-aos="fade-up" data-aos-delay="400" draggable="false" src="assets/img/label.png" height="25px" alt="">
+              <img
+                data-aos="fade-up"
+                data-aos-delay="400"
+                draggable="false"
+                src="assets/img/label.png"
+                height="30px"
+                alt=""
+              />
               <style>
                 #label-font-size {
                   font-size: 25px;
@@ -113,26 +153,38 @@
               <p
                 data-aos="fade-up"
                 data-aos-delay="600"
-                style="font-size: 15px; margin-bottom: 5px;"
+                style="font-size: 15px; margin-bottom: 5px"
               >
                 203 S. Demeterio St., Maasin City, So. Leyte
               </p>
-              <hr class="me-4" style="opacity: 0.1;">
+              <hr class="me-4" style="opacity: 0.1;"/>
               <p
                 data-aos="fade-up"
                 data-aos-delay="600"
-                style="font-size: 13px; margin-bottom: -5px;"
+                style="font-size: 14px; margin-bottom: -5px"
                 class="text-secondary d-flex align-items-center gap-1"
               >
-              <iconify-icon icon="fluent-color:building-store-24" width="22" height="22" class="mb-1 me-1"></iconify-icon> Walking distance to <b>Gaisano Grand Mall</b>
+                <iconify-icon
+                  icon="fluent-color:building-store-24"
+                  width="22"
+                  height="22"
+                  class="mb-1 me-1"
+                ></iconify-icon>
+                Walking distance to <b>Gaisano Grand Mall</b>
               </p>
               <p
                 data-aos="fade-up"
                 data-aos-delay="600"
-                style="font-size: 13px;"
+                style="font-size: 14px"
                 class="text-secondary d-flex align-items-center gap-1"
               >
-              <iconify-icon icon="noto-v1:ship" width="22" height="22" class="mb-1 me-1"></iconify-icon> and <b>Maasin Seaport</b>
+                <iconify-icon
+                  icon="noto-v1:ship"
+                  width="22"
+                  height="22"
+                  class="mb-1 me-1"
+                ></iconify-icon>
+                and <b>Maasin Seaport</b>
               </p>
               <div class="d-flex" data-aos="fade-up" data-aos-delay="800">
                 <a
@@ -198,8 +250,8 @@
                   Located at
                   <strong
                     >203 S. Demeterio St., Maasin City, Southern Leyte</strong
-                  >, Southern Comforts Pensionne offers a relaxing and convenient
-                  stay for travelers and guests. Enjoy
+                  >, Southern Comforts Pensionne offers a relaxing and
+                  convenient stay for travelers and guests. Enjoy
                   <strong>free parking</strong>, <strong>Wi-Fi access</strong>,
                   <strong>hot & cold showers</strong>, and
                   <strong>air-conditioned rooms</strong>, all in a secure and
@@ -225,11 +277,10 @@
                   </li>
                   <li>
                     <i class="bi bi-check-circle-fill"></i>
-                    <span
-                      >
-                      Smoke & Fire Safety Detectors - Ensuring your safety is our top priority
-                      </span
-                    >
+                    <span>
+                      Smoke & Fire Safety Detectors - Ensuring your safety is
+                      our top priority
+                    </span>
                   </li>
                 </ul>
                 <p>
@@ -403,7 +454,7 @@
                   <div
                     class="icon-box d-flex flex-column justify-content-center align-items-center"
                   >
-                  <i class='bi bi-fire'></i>
+                    <i class="bi bi-fire"></i>
                     <h4>Smoke & Fire Safety Detectors</h4>
                     <p>Your safety is our top priority</p>
                   </div>
@@ -429,9 +480,16 @@
             room rates.
           </small>
 
-          <p style="font-size: 23px;">
-            <a href="#gallery" class="fw-bold text-success d-flex align-items-center gap-2 justify-content-center">
-              <iconify-icon icon="jam:pictures-f" width="24" height="24"></iconify-icon>
+          <p style="font-size: 23px">
+            <a
+              href="#gallery"
+              class="fw-bold text-success d-flex align-items-center gap-2 justify-content-center"
+            >
+              <iconify-icon
+                icon="jam:pictures-f"
+                width="24"
+                height="24"
+              ></iconify-icon>
               VIEW PICTURES HERE
             </a>
           </p>
@@ -458,7 +516,6 @@
               </div>
             </div>
           </div>
-
         </div>
         <!-- End Section Title -->
 
@@ -892,8 +949,8 @@
       </section>
       <!-- /Menu Section -->
 
-       <!-- Gallery Section -->
-       <section id="gallery" class="gallery section">
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Gallery</h2>
@@ -904,7 +961,12 @@
         </div>
         <!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100" style="margin-bottom: -20px; margin-top: -20px;">
+        <div
+          class="container"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          style="margin-bottom: -20px; margin-top: -20px"
+        >
           <div class="swiper init-swiper">
             <script type="application/json" class="swiper-config">
               {
@@ -1037,7 +1099,8 @@
                 <a
                   class="glightbox"
                   data-gallery="images-gallery"
-                  href="assets/img/storage/sample-9.jpg">
+                  href="assets/img/storage/sample-9.jpg"
+                >
                   <img
                     draggable="false"
                     src="assets/img/storage/sample-9.jpg"
@@ -1077,6 +1140,18 @@
                   ><img
                     draggable="false"
                     src="assets/img/storage/sample-12.jpg"
+                    class="img-fluid"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="glightbox"
+                  data-gallery="images-gallery"
+                  href="assets/img/storage/sample-13.jpg"
+                  ><img
+                    draggable="false"
+                    src="assets/img/storage/sample-13.jpg"
                     class="img-fluid"
                     alt=""
                 /></a>
@@ -1165,18 +1240,7 @@
                     alt=""
                 /></a>
               </div>
-              <div class="swiper-slide">
-                <a
-                  class="glightbox"
-                  data-gallery="images-gallery"
-                  href="assets/img/storage/sample-21.jpg"
-                  ><img
-                    draggable="false"
-                    src="assets/img/storage/sample-21.jpg"
-                    class="img-fluid"
-                    alt=""
-                /></a>
-              </div>
+              
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -1187,7 +1251,7 @@
       <!-- Testimonials Section -->
       <section id="testimonials" class="testimonials section light-background">
         <!-- Section Title -->
-        <div class="container section-title" >
+        <div class="container section-title">
           <h2>REVIEWS BASED ON GOOGLE MAPS</h2>
           <p>
             What Are They <span class="description-title">Saying About Us</span>
@@ -1195,7 +1259,7 @@
         </div>
         <!-- End Section Title -->
 
-        <div class="container" >
+        <div class="container">
           <div class="swiper init-swiper">
             <script type="application/json" class="swiper-config">
               {
